@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const listaRecetasContainer = document.getElementById('lista-recetas');
     const categoriaTitulo = document.getElementById('categoria-titulo');
 
-    // Obtener las categorías al cargar la página
     fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
         .then(response => response.json())
         .then(data => {
